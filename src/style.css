@@ -1,0 +1,93 @@
+/* --- 1. ШРИФТИ (Google Fonts) --- */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Inter:wght@400&family=Sniglet:wght@400;800&display=swap');
+
+/* --- ІМПОРТИ СЕКЦІЙ  --- */
+@import url('css/sections/header.css');
+@import url('css/sections/hero.css');
+@import url('css/sections/about.css');
+@import url('css/sections/how-to-play.css');
+@import url('css/sections/features.css');
+@import url('css/sections/characters.css');
+@import url('css/sections/gallery.css');
+@import url('css/sections/reviews.css');
+@import url('css/sections/faq.css');
+@import url('css/sections/footer.css');
+@import url('css/sections/legal.css'); /* Для Privacy Policy та Terms */
+
+/* --- СКИНУТТЯ СТИЛІВ (Reset) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- ГЛОБАЛЬНІ ЗМІННІ (Variables) --- */
+:root {
+    /* Кольори */
+    --bg-page: #FFFFFF;
+    --footer-bg: #000000;
+    --header-scroll-bg: rgba(255, 255, 255, 0.95);
+    
+    /* Шрифти */
+    --font-header: 'Sniglet', cursive;
+    --font-main: 'Baloo 2', sans-serif;
+    --font-legal: 'Inter', sans-serif;
+    
+    /* Розміри */
+    --container-desktop: 1440px;
+    --container-mobile: 375px;
+    --section-gap: 78px; /* Однакові відступи між секціями за ТЗ */
+}
+
+/* --- БАЗОВІ НАЛАШТУВАННЯ --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-page);
+    font-family: var(--font-main);
+    color: #333;
+    line-height: 1.4;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-desktop);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* --- 6. МОБІЛЬНА АДАПТАЦІЯ (Загальні правила) --- */
+@media (max-width: 1023px) {
+     
+    .container {
+        max-width: var(--container-mobile);
+    }
+    img {
+        height: auto;
+    }
+}
