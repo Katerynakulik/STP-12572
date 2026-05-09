@@ -18,7 +18,9 @@
     />
     <!-- Vite Entry Point -->
     <script type="module" crossorigin src="/STP-12572/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12572/assets/index-DgeW137A.css">
+    <link rel="modulepreload" crossorigin href="/STP-12572/assets/vendor-Cb7VvBBu.js">
+    <link rel="stylesheet" crossorigin href="/STP-12572/assets/vendor-BfPs2Zf6.css">
+    <link rel="stylesheet" crossorigin href="/STP-12572/assets/index-CkgsrkeH.css">
   </head>
   <body>
     <!-- Header Partials -->
@@ -43,20 +45,20 @@
       data-menu-open
     >
       <svg class="burger-btn-icon" width="44" height="44">
-        <use href="/STP-12572/assets/sprite-QR5IOzQg.svg#icon-Burger"></use>
+        <use href="/STP-12572/assets/sprite-tWwiWmvu.svg#icon_Burger"></use>
       </svg>
     </button>
 
     <div class="header-nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#pets-list">About</a></li>
-        <li class="nav-item"><a href="#about">How to Play</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#how-to-play">How to Play</a></li>
         <li class="nav-item"><a href="#features">Features</a></li>
-        <li class="nav-item"><a href="#stories">Characters</a></li>
-        <li class="nav-item"><a href="#pets-list">Gallery</a></li>
-        <li class="nav-item"><a href="#about">Reviews</a></li>
+        <li class="nav-item"><a href="#characters">Characters</a></li>
+        <li class="nav-item"><a href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a href="#reviews">Reviews</a></li>
         <li class="nav-item"><a href="#faq">FAQ</a></li>
-        <li class="nav-item"><a href="#contacts">Contacts</a></li>
+        <li class="nav-item"><a href="#contacts">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -75,20 +77,22 @@
           data-menu-close
         >
           <svg class="burger-btn-icon" width="44" height="44">
-            <use href="/STP-12572/assets/sprite-QR5IOzQg.svg#close"></use>
+            <use href="/STP-12572/assets/sprite-tWwiWmvu.svg#close"></use>
           </svg>
         </button>
       </div>
       <div class="mobile-nav">
         <ul class="mobile-nav-list">
-          <li class="mobile-nav-item"><a href="#pets-list">About</a></li>
-          <li class="mobile-nav-item"><a href="#about">How to Play</a></li>
+          <li class="mobile-nav-item"><a href="#about">About</a></li>
+          <li class="mobile-nav-item">
+            <a href="#how-to-play">How to Play</a>
+          </li>
           <li class="mobile-nav-item"><a href="#features">Features</a></li>
-          <li class="mobile-nav-item"><a href="#stories">Characters</a></li>
-          <li class="mobile-nav-item"><a href="#pets-list">Gallery</a></li>
-          <li class="mobile-nav-item"><a href="#about">Reviews</a></li>
+          <li class="mobile-nav-item"><a href="#characters">Characters</a></li>
+          <li class="mobile-nav-item"><a href="#gallery">Gallery</a></li>
+          <li class="mobile-nav-item"><a href="#reviews">Reviews</a></li>
           <li class="mobile-nav-item"><a href="#faq">FAQ</a></li>
-          <li class="mobile-nav-item"><a href="#contacts">Contacts</a></li>
+          <li class="mobile-nav-item"><a href="#contacts">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -134,11 +138,94 @@
     <h2>reviews</h2>
     </div>
 </section>
-      <section class="section faq" id="faq">
+        -->
+
+      <section class="faq" id="faq">
   <div class="container">
-    <h2>FAQ</h2>
-    </div>
-</section> -->
+    <h2 class="section-title">FAQ</h2>
+    <ul class="faq-list accordion-container">
+      <li class="ac faq-list-item">
+        <button type="button" class="button-text ac-trigger">
+          Is the game suitable for all ages?
+          <span>
+            <svg class="" width="24" height="24">
+              <use href="/STP-12572/assets/sprite-tWwiWmvu.svg#icon_chevron_down"></use>
+            </svg>
+          </span>
+        </button>
+
+        <div class="ac-panel">
+          <div class="faq-content">
+            <p>Yes. It’s designed to be family-friendly.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="ac faq-list-item">
+        <button type="button" class="ac-trigger button-text">
+          Can I customize spaces?
+          <span>
+            <svg class="" width="24" height="24">
+              <use href="/STP-12572/assets/sprite-tWwiWmvu.svg#icon_chevron_down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="ac-panel">
+          <div class="faq-content">
+            <p>Yes. Decoration is a key feature.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="ac faq-list-item">
+        <button type="button" class="ac-trigger button-text">
+          Is it easy to play?
+          <span>
+            <svg class="" width="24" height="24">
+              <use href="/STP-12572/assets/sprite-tWwiWmvu.svg#icon_chevron_down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="ac-panel">
+          <div class="faq-content">
+            <p>Yes. The mechanics are simple and intuitive.</p>
+          </div>
+        </div>
+      </li>
+      <li class="ac faq-list-item">
+        <button type="button" class="ac-trigger button-text">
+          Are there many items to collect?
+          <span>
+            <svg class="" width="24" height="24">
+              <use href="/STP-12572/assets/sprite-tWwiWmvu.svg#icon_chevron_down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="ac-panel">
+          <div class="faq-content">
+            <p>Yes. New items unlock as you progress.</p>
+          </div>
+        </div>
+      </li>
+      <li class="faq-list-item ac">
+        <button type="button" class="button-text ac-trigger">
+          Can I play in short sessions?
+          <span>
+            <svg class="" width="24" height="24">
+              <use href="/STP-12572/assets/sprite-tWwiWmvu.svg#icon_chevron_down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="ac-panel">
+          <div class="faq-content">
+            <p>Yes. Levels are quick and accessible.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
     </main>
 
     <!-- Footer Partials -->
