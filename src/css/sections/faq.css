@@ -1,3 +1,136 @@
-.faq{
-    background-color: blue;
+.faq {
+  padding: 64px 0;
+}
+
+.faq .section-title {
+  font-family: 'Sniglet', system-ui;
+  font-weight: 800;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+  color: #4a3b37;
+}
+
+.faq .faq-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq .faq-list-item {
+  width: 100%;
+  background-color: #ededed;
+  border-radius: 8px;
+}
+.faq .ac.is-active {
+  background: rgba(185, 233, 255, 0.7);
+}
+
+.faq .button-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq .ac.is-active svg {
+  transform: rotate(180deg);
+}
+
+.faq .ac-trigger::before,
+.faq .ac-trigger::after {
+  display: none !important;
+  content: none !important;
+}
+
+.faq .ac-trigger {
+  appearance: none;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+}
+.faq .faq-icon {
+  margin-left: auto;
+  display: flex;
+  flex-shrink: 0;
+  transition: transform 250ms ease;
+}
+
+.faq .ac .ac-trigger {
+  font-family: 'Sniglet', system-ui !important;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 16px;
+
+  display: flex;
+}
+.faq .ac .ac-trigger:focus {
+  color: #000000;
+}
+.faq .ac.is-active .ac-trigger {
+  padding-bottom: 8px;
+}
+
+.faq .ac-panel {
+  padding: 0;
+}
+.faq .ac {
+  margin-bottom: 0 !important;
+}
+
+.ac-panel {
+  overflow: hidden;
+}
+
+.faq .button-text svg {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.faq-content {
+  font-weight: 400;
+  font-size: 15px;
+
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0 16px 16px;
+}
+
+.faq-steps {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+/* Styles for Desktop devices */
+@media screen and (min-width: 1440px) {
+  .faq {
+    padding: 78px 0;
+  }
+
+  .faq .section-title {
+    font-size: 48px;
+    margin-bottom: 44px;
+  }
+
+  .faq .ac .ac-trigger {
+    padding: 24px;
+    font-size: 32px;
+  }
+  .faq-content {
+    font-size: 24px;
+    padding: 0 24px 24px;
+  }
+  .faq .ac.is-active .ac-trigger {
+    padding-bottom: 12px;
+  }
+  .faq .button-text svg {
+    width: 44px;
+    height: 44px;
+  }
 }
