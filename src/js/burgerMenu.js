@@ -1,11 +1,32 @@
-const openBtnEl = document.querySelector('[data-action="open"]');
-const closeBtnEl = document.querySelector('[data-action="close"]');
-const burgerMenuEl = document.querySelector('[data-visible]');
+const menu = document.querySelector('[data-menu]');
+const openBtn = document.querySelector('[data-menu-open]');
+const closeBtn = document.querySelector('[data-menu-close]');
+const menuLinks = document.querySelectorAll('.mobile-nav a');
 
-openBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'open';
+const closeMenu = () => {
+  menu.classList.remove('is-open');
+  document.body.style.overflow = '';
+};
+
+openBtn.addEventListener('click', () => {
+  menu.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
 });
 
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
+closeBtn.addEventListener('click', closeMenu);
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+    closeMenu();
+  }
+});
+
+menu.addEventListener('click', e => {
+  if (e.target === menu) {
+    closeMenu();
+  }
 });
