@@ -46,16 +46,6 @@ img {
 
 /* --- ГЛОБАЛЬНІ ЗМІННІ (Variables) --- */
 :root {
-  /* Кольори */
-  --bg-page: #ffffff;
-  --footer-bg: #000000;
-  --header-scroll-bg: rgba(255, 255, 255, 0.95);
-
-  /* Шрифти */
-  --font-header: 'Sniglet', cursive;
-  --font-main: 'Baloo 2', sans-serif;
-  --font-legal: 'Inter', sans-serif;
-
   /* Розміри */
   --container-desktop: 1440px;
   --container-mobile: 375px;
@@ -71,7 +61,6 @@ body {
   background-color: var(--bg-page);
   font-family: var(--font-main);
   color: #333;
-  line-height: 1.4;
 }
 
 /* .container {
@@ -101,14 +90,3 @@ body {
   }
 }
 
-.sniglet-regular {
-  font-family: 'Sniglet', system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.sniglet-extrabold {
-  font-family: 'Sniglet', system-ui;
-  font-weight: 800;
-  font-style: normal;
-}
