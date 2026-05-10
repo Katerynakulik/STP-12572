@@ -1,7 +1,7 @@
 .hero {
   margin-top: 74px;
   background-color: rgba(216, 243, 255, 0.7);
-  background-image: url(../../img/hero/hero_mob.png);
+  background-image: url(./img/hero/hero_mob.png);
   background-size: cover;
   min-height: 491px;
 }
@@ -35,7 +35,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url(../../img/hero/hero_desk.png);
+    background-image: url(./img/hero/hero_desk.png)
   }
   .title_container {
     width: 741px;
