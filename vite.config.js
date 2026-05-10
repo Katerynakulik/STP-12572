@@ -45,7 +45,8 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
       ViteImageOptimizer({
-        exclude: /^sprite.svg$/,
+        // exclude: /^sprite.svg$/,
+        exclude: 'sprite.svg',
         png: {
           quality: 60,
         },
