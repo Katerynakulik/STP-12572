@@ -1,3 +1,25 @@
-.hero{
-    background-color: rebeccapurple;
+.hero {
+  margin-top: 74px;
+  background-color: rgba(216, 243, 255, 0.7);
+  background-image: url(../../img/hero/hero_mob.png);
+  background-size: cover;
+  height: 491px;
 }
+.title_container {
+  width: 247px;
+  height: 160px;
+  padding: 16px auto 12px 0;
+}
+.title {
+  font-family: 'Sniglet', system-ui;
+  font-weight: 800;
+  font-size: 32px;
+  color: #4a3b37;
+}
+.hero_text{
+    margin-top: 12px;
+    width: 149px;
+height: 45px;
+font-family: 'Sniglet', system-ui;
+}
+
