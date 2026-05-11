@@ -1,14 +1,21 @@
 .hero {
   margin-top: 74px;
   background-color: rgba(216, 243, 255, 0.7);
-  background-image: url(../../img/hero/hero_mob.png);
-  background-size: cover;
   min-height: 491px;
+}
+.hero-container {
+  padding: 16px;
+  background-image: image-set(
+    url('../../img/hero/hero_mob@1x.png') 1x,
+    url('../../img/hero/hero_mob@2x.png') 2x
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .title_container {
   width: 247px;
   min-height: 160px;
-  padding-top: 16px;
 }
 .title {
   font-family: 'Sniglet', system-ui;
@@ -35,12 +42,20 @@
 }
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url(../../img/hero/hero_desk.png);
+    padding: 0;
+    height: 761px;
+  }
+  .hero-container {
+    padding: 72px;
+    height: 100%;
+    background-image: image-set(
+      url('../../img/hero/hero_desk.png') 1x,
+      url('../../img/hero/hero_desk@2x.png') 2x
+    );
   }
   .title_container {
     width: 741px;
     min-height: 160px;
-    padding-top: 72px;
   }
   .title {
     font-size: 64px;
@@ -55,8 +70,9 @@
     width: 196px;
     height: 58px;
     border-radius: 5px;
-    margin-top: 200px;
+    margin-top: 303px;
     margin-left: 0;
-    padding-bottom: 72px;
+    margin-bottom: 0;
+   
   }
 }

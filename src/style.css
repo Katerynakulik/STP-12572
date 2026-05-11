@@ -12,7 +12,7 @@
 @import url('css/sections/reviews.css');
 @import url('css/sections/faq.css');
 @import url('css/sections/footer.css');
-@import url('css/sections/legal.css'); /* Для Privacy Policy та Terms */
+@import url('css/sections/legal.css');
 
 /* --- СКИНУТТЯ СТИЛІВ (Reset) --- */
 * {
@@ -20,7 +20,14 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+ color: #4a3b37;
+ font-family: "Sniglet", system-ui;
+ font-weight: 400;
+}
+section{
+  margin-top: 78px;
+}
 ul,
 ol {
   list-style: none;
@@ -31,7 +38,13 @@ a {
   color: inherit;
   transition: 0.3s ease;
 }
-
+h2{
+ font-family: "Sniglet", system-ui;
+font-weight: 800;
+font-size: 48px;
+letter-spacing: 0em;
+text-align: center;
+}
 button {
   cursor: pointer;
   border: none;
@@ -52,34 +65,23 @@ img {
   --section-gap: 78px; /* Однакові відступи між секціями за ТЗ */
 }
 
-/* --- БАЗОВІ НАЛАШТУВАННЯ --- */
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  background-color: var(--bg-page);
-  font-family: var(--font-main);
-  color: #333;
+header{
+font-family: "Sniglet", system-ui;
+font-weight: 400;
+font-size: 20px;
+color: #4a3b37;
 }
 
-/* .container {
-  width: 100%;
-  max-width: var(--container-desktop);
-  margin: 0 auto;
-  padding: 0 16px;
-} */
-
-/* --- 6. МОБІЛЬНА АДАПТАЦІЯ (Загальні правила) --- */
 /* Styles for Mobile devices */
 .container {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  
 }
-
-/* Styles for Tablet devices */
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
