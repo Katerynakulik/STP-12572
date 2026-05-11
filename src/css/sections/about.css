@@ -1,3 +1,39 @@
-.about{
-    background-color: aqua;
+.about {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.title_about {
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #4a3b37;
+  font-family: 'Sniglet', system-ui;
+}
+.text_about {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #4a3b37;
+  font-family: 'Sniglet', system-ui;
+}
+.about-image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+@media only screen and (min-width: 1440px) {
+  .about {
+    margin-top: 78px;
+  }
+  .title_about {
+    font-size: 48px;
+    letter-spacing: 0em;
+  }
+  .text_about {
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
 }
