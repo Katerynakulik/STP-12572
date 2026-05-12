@@ -1,10 +1,10 @@
 .hero {
   margin-top: 74px;
   background-color: rgba(216, 243, 255, 0.7);
-  min-height: 491px;
 }
 .hero-container {
-  padding: 16px;
+  min-height: 491px;
+  padding-top: 16px;
   background-image: image-set(
     url('../../img/hero/hero_mob@1x.png') 1x,
     url('../../img/hero/hero_mob@2x.png') 2x
@@ -43,15 +43,15 @@
 @media only screen and (min-width: 1440px) {
   .hero {
     padding: 0;
-    height: 761px;
   }
   .hero-container {
-    padding: 72px;
-    height: 100%;
+    padding-top: 72px;
+
     background-image: image-set(
-      url('../../img/hero/hero_desk.png') 1x,
+      url('../../img/hero/hero_desk@1x.png') 1x,
       url('../../img/hero/hero_desk@2x.png') 2x
     );
+    height: 761px;
   }
   .title_container {
     width: 741px;
@@ -73,6 +73,5 @@
     margin-top: 303px;
     margin-left: 0;
     margin-bottom: 0;
-   
   }
 }
