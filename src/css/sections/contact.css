@@ -1,0 +1,68 @@
+.contact {
+  background-color: #e4f7ff;
+  padding: 16px;
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact h2 {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.touch-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+.contact a:hover,
+.contact a:focus {
+  text-decoration: underline;
+}
+.touch-app-link {
+  display: block;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+.g-play-img {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+@media only screen and (min-width: 1440px) {
+  .contact {
+    padding-top: 102px;
+    padding-bottom: 24px;
+  }
+  .contact h2 {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  .touch-link {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .contact a:hover,
+  .contact a:focus {
+    text-decoration: underline;
+  }
+  .touch-app-link {
+    display: block;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+  }
+  .g-play-img {
+    display: block;
+    width: 196px;
+    height: auto;
+  }
+}

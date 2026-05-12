@@ -1,5 +1,4 @@
-.terms {
-}
+.privacy-container,
 .terms-container {
   padding-left: 16px;
   padding-right: 16px;
@@ -30,11 +29,24 @@
 }
 .terms-content {
 }
+.terms-back-icon {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .terms-subtitle {
   font-size: 24px;
 
   line-height: 1.317;
   color: #4a3b37;
+}
+span .terms-subtitle {
+  display: inline-block;
+  margin-bottom: 24px;
 }
 .terms-text {
   margin-bottom: 24px;
@@ -51,19 +63,24 @@
   font-weight: 400;
   color: #4a3b37;
 }
+.privacy-list,
 .terms-list {
   list-style-type: disc;
+  padding-left: 20px;
+}
+.numeric-list {
+  list-style-type: numeric;
   padding-left: 20px;
 }
 .terms-list-item {
 }
 
 @media screen and (min-width: 1440px) {
-  .terms-title{
+  .terms-title {
     font-size: 64px;
-
   }
-  .terms-container{
+  .privacy-container,
+  .terms-container {
     padding-left: 100px;
     padding-right: 100px;
   }

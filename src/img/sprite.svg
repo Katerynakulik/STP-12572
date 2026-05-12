@@ -3,15 +3,8 @@
 <symbol id="icon_Burger" viewBox="0 0 32 32">
 <path fill="none" stroke="#5a3e2b" style="stroke: var(--color1, #5a3e2b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4545" d="M28 16h-18.667M28 8h-24M28 24h-24"></path>
 </symbol>
-<symbol id="icon_arrow_back" viewBox="0 0 24 24">
-  <path
-    d="M15 6L9 12L15 18"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    fill="none"
-  />
+<symbol id="icon_arrow_back" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M20 24l-8-8 8-8"></path>
 </symbol>
 <symbol id="icon_arrow_forward" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M12 24l8-8-8-8"></path>

@@ -1,11 +1,13 @@
 .gallery {
-  padding-top: var(--section-gap);
+  padding-top: 16px;
 }
-
 .gallery h2 {
-  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 12px;
 }
-
 /* МОБІЛЬНІ СТИЛІ (Swiper) */
 .gallery-swiper {
   width: 100%;
@@ -23,15 +25,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin-top: 24px;
-  z-index: 10;
+  gap: 42px;
+  margin-top: 12px;
 }
 
 .swiper-button-prev-custom,
 .swiper-button-next-custom {
-  width: 44px;  /* Чіткі розміри для кліку */
-  height: 44px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +49,7 @@
   height: 32px;
   fill: none;
   stroke: currentColor; /* Бере колір від батька */
-  stroke-width: 2;      /* Робимо лінію товстішою, щоб було видно */
+  stroke-width: 2; /* Робимо лінію товстішою, щоб було видно */
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -64,13 +65,11 @@
   .gallery-swiper {
     overflow: visible;
   }
-  
+
   .gallery-swiper .swiper-wrapper {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important; /* 3 колонки */
-    gap: 24px !important;
-    transform: none !important;
-    width: 100% !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 24px;
   }
 
   .gallery-swiper .swiper-slide {
@@ -80,17 +79,26 @@
 
   .gallery-item img {
     max-width: 100%;
-    height: auto; /* Скидаємо мобільну висоту */
+    height: 741px;
   }
 
   /* ЛОГІКА СІТКИ: середня колонка (елемент 2) по центру */
   .gallery-item:nth-child(2) {
     grid-column: 2;
     grid-row: 1 / span 2; /* Займає 2 рядки по висоті */
-    align-self: center;   /* Центрування по вертикалі */
+    align-self: center; /* Центрування по вертикалі */
   }
 
   .gallery-controls {
     display: none;
+  }
+  .gallery {
+    padding-top: 78px;
+  }
+  .gallery h2 {
+    margin-bottom: 44px;
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: 0em;
   }
 }
