@@ -1,82 +1,57 @@
-<section class="section gallery" id="gallery">
-  <div class="container swiper mySwiper">
+<section class="gallery section" id="gallery">
+  <div class="container">
     <h2>Gallery</h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper gallery-grid">
+        
+        <div class="swiper-slide gallery-item">
           <picture>
-            <source
-              srcset="./img/gallery/gallery_1_desk.jpg"
-              media="(min-width: 1440px)"
-            />
-
-            <img
-              src="./img/gallery/gallery_1_desk@2x.jpg"
-              alt="Hello Kitty Merch"
-              class="feature-image"
-            />
+            <source srcset="./img/gallery/gallery_1_desk.jpg 1x, ./img/gallery/gallery_1_desk@2x.jpg 2x" media="(min-width: 1440px)">
+            <source srcset="./img/gallery/gallery_1_mob.jpg 1x, ./img/gallery/gallery_1_mob@2x.jpg 2x" media="(max-width: 1439px)">
+            <img src="./img/gallery/gallery_1_mob.jpg" alt="Game Screenshot 1" loading="lazy">
           </picture>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              srcset="./img/gallery/gallery_2_desk.jpg"
-              media="(min-width: 1440px)"
-            />
 
-            <img
-              src="./img/gallery/gallery_2_desk@2x.jpg"
-              alt="Hello Kitty Merch"
-              class="feature-image"
-            />
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source srcset="./img/gallery/gallery_2_desk.jpg 1x, ./img/gallery/gallery_2_desk@2x.jpg 2x" media="(min-width: 1440px)">
+            <source srcset="./img/gallery/gallery_2_mob.jpg 1x, ./img/gallery/gallery_2_mob@2x.jpg 2x" media="(max-width: 1439px)">
+            <img src="./img/gallery/gallery_2_mob.jpg" alt="Game Screenshot 2" loading="lazy">
           </picture>
         </div>
-        <div class="swiper-slide">
-          Slide 3<picture>
-            <source
-              srcset="./img/gallery/gallery_3_desk.jpg"
-              media="(min-width: 1440px)"
-            />
 
-            <img
-              src="./img/gallery/gallery_3_desk@2x.jpg"
-              alt="Hello Kitty Merch"
-              class="feature-image"
-            />
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source srcset="./img/gallery/gallery_3_desk.jpg 1x, ./img/gallery/gallery_3_desk@2x.jpg 2x" media="(min-width: 1440px)">
+            <source srcset="./img/gallery/gallery_3_mob.jpg 1x, ./img/gallery/gallery_3_mob@2x.jpg 2x" media="(max-width: 1439px)">
+            <img src="./img/gallery/gallery_3_mob.jpg" alt="Game Screenshot 3" loading="lazy">
           </picture>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              srcset="./img/gallery/gallery_4_desk.jpg"
-              media="(min-width: 1440px)"
-            />
 
-            <img
-              src="./img/gallery/gallery_4_desk@2x.jpg"
-              alt="Hello Kitty Merch"
-              class="feature-image"
-            />
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source srcset="./img/gallery/gallery_4_desk.jpg 1x, ./img/gallery/gallery_4_desk@2x.jpg 2x" media="(min-width: 1440px)">
+            <source srcset="./img/gallery/gallery_4_mob.jpg 1x, ./img/gallery/gallery_4_mob@2x.jpg 2x" media="(max-width: 1439px)">
+            <img src="./img/gallery/gallery_4_mob.jpg" alt="Game Screenshot 4" loading="lazy">
           </picture>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              srcset="./img/gallery/gallery_5_desk.jpg"
-              media="(min-width: 1440px)"
-            />
 
-            <img
-              src="./img/gallery/gallery_5_desk@2x.jpg"
-              alt="Hello Kitty Merch"
-              class="feature-image"
-            />
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source srcset="./img/gallery/gallery_5_desk.jpg 1x, ./img/gallery/gallery_5_desk@2x.jpg 2x" media="(min-width: 1440px)">
+            <source srcset="./img/gallery/gallery_5_mob.jpg 1x, ./img/gallery/gallery_5_mob@2x.jpg 2x" media="(max-width: 1439px)">
+            <img src="./img/gallery/gallery_5_mob.jpg" alt="Game Screenshot 5" loading="lazy">
           </picture>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+      <div class="gallery-controls">
+        <button type="button" class="swiper-button-prev-custom">
+          <svg width="32" height="32"><use href="#icon_arrow_back"></use></svg>
+        </button>
+        <button type="button" class="swiper-button-next-custom">
+          <svg width="32" height="32"><use href="#icon_arrow_forward"></use></svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
