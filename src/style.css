@@ -26,10 +26,8 @@ body {
   font-family: 'Sniglet', system-ui;
   font-weight: 400;
 }
-section {
-  margin-top: 78px;
-  scroll-margin-top: 110px;
-}
+
+
 ul,
 ol {
   list-style: none;
@@ -81,8 +79,10 @@ header {
 .container {
   min-width: 320px;
   max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
-  padding: 0 16px;
+  
 }
 
 /* Styles for Desktop devices */
