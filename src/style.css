@@ -27,7 +27,6 @@ body {
   font-weight: 400;
 }
 
-
 ul,
 ol {
   list-style: none;
@@ -56,6 +55,15 @@ img {
   max-width: 100%;
   display: block;
 }
+.section-spacing {
+  padding-top: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-spacing {
+    padding-top: 78px;
+  }
+}
 
 /* --- ГЛОБАЛЬНІ ЗМІННІ (Variables) --- */
 :root {
@@ -82,7 +90,6 @@ header {
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
-  
 }
 
 /* Styles for Desktop devices */
