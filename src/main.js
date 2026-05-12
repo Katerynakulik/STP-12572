@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 // Обробка скролу для хедера (фон)
 const header = document.querySelector('#main-header');
 window.addEventListener('scroll', () => {
-    header.classList.toggle('header--scrolled', window.scrollY > 50);
+  header.classList.toggle('header--scrolled', window.scrollY > 50);
 });
 // Swiper
 const swiper = new Swiper('.gallery-swiper', {
@@ -22,13 +22,13 @@ const swiper = new Swiper('.gallery-swiper', {
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-custom',
+    prevEl: '.swiper-button-prev-custom',
   },
   // Вимикаємо Swiper на десктопі
   breakpoints: {
     1440: {
       enabled: false,
-    }
-  }
+    },
+  },
 });
