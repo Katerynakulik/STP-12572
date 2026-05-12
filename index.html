@@ -17,11 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap"
       rel="stylesheet"
     />
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <!-- Vite Entry Point -->
     <script type="module" crossorigin src="/STP-12572/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/STP-12572/assets/vendor-BWrvjNli.js">
-    <link rel="stylesheet" crossorigin href="/STP-12572/assets/vendor-pvxkJjp9.css">
-    <link rel="stylesheet" crossorigin href="/STP-12572/assets/index-DN-99M6I.css">
+    <link rel="modulepreload" crossorigin href="/STP-12572/assets/rolldown-runtime-BDqkOrsv.js">
+    <link rel="modulepreload" crossorigin href="/STP-12572/assets/vendor-CTQnzdY0.js">
+    <link rel="stylesheet" crossorigin href="/STP-12572/assets/vendor-zOkw_aly.css">
+    <link rel="stylesheet" crossorigin href="/STP-12572/assets/index-CL_kgcfD.css">
   </head>
   <body>
     <!-- Header Partials -->
@@ -128,7 +131,7 @@
 </section>
 
       <section class="section about" id="about">
-  <div class="container">
+  <div class="container about-container">
     <h2 class="title_about">About the Game</h2>
     <p class="text_about">
       Look, I know what you're thinking - another match-3 game, right? But this
@@ -202,10 +205,95 @@
 </section>
 
       <section class="section features" id="features">
-  <div class="container">
+  <div class="container features-container">
     <h2>Features</h2>
-    </div>
+    <p class="features-par">What makes this game special</p>
+    <ul class="features-list">
+     
+        <li class="feature-item feat-1">
+          <h3 class="feat-h3">Collection System</h3>
+          <p class="feat-p">Unlock a variety of themed items.</p>
+        </li>
+        <li class="feat-2 desktop-hidden">
+          <picture>
+            <source
+              srcset="/STP-12572/assets/features_1_mob@2x-cxTHSIKy.jpg"
+              media="(min-width: 1440px)"
+            />
+
+            <img
+              src="/STP-12572/assets/features_1_mob-j6Th98fx.jpg"
+              alt="Hello Kitty Merch"
+              class="feature-image"
+            />
+          </picture>
+        </li>
+
+        <li class="feature-item feat-3">
+          <h3 class="feat-h3">Customization</h3>
+          <p class="feat-p">Decorate and personalize your spaces.</p>
+        </li>
+   
+      <li class="feat-4 mobile-hidden">
+        <picture>
+          <source
+            srcset="/STP-12572/assets/features_1__desk-DsvmQ0m9.jpg"
+            media="(min-width: 1440px)"
+          />
+
+          <img
+            src="/STP-12572/assets/features_1__desk@2x-oCBO3xim.jpg"
+            alt="Hello Kitty Merch"
+            class="feature-image"
+          />
+        </picture>
+      </li>
+      <li class="feat-5 desktop-hidden">
+        <picture>
+          <source
+            srcset="/STP-12572/assets/features_2_mob@2x-B5ZJ--65.jpg"
+            media="(min-width: 1440px)"
+          />
+
+          <img
+            src="/STP-12572/assets/features_2_mob-Dac3LKs2.jpg"
+            alt="Hello Kitty Merch"
+            class="feature-image"
+          />
+        </picture>
+      </li>
+      <li class="feat-6 mobile-hidden">
+        <picture>
+          <source
+            srcset="/STP-12572/assets/features_2_desk@2x-CUkdY6y6.jpg"
+            media="(min-width: 1440px)"
+          />
+
+          <img
+            src="/STP-12572/assets/features_2_mob@2x-B5ZJ--65.jpg"
+            alt="Hello Kitty Merch"
+            class="feature-image"
+          />
+        </picture>
+      </li>
+      <li class="feature-item feat-7">
+        <h3 class="feat-h3">Classic Match-3 Gameplay</h3>
+        <p class="feat-p">Easy to learn, satisfying to play.</p>
+      </li>
+      </ul>
+      <ul class='features-list-2'>
+      <li class="feature-item feat-8">
+        <h3 class="feat-h3">Charming Visuals</h3>
+        <p class="feat-p">Soft colors and recognizable characters.</p>
+      </li>
+      <li class="feature-item feat-9">
+        <h3 class="feat-h3">Steady Progression</h3>
+        <p class="feat-p">New content unlocks over time.</p>
+      </li>
+    </ul>
+  </div>
 </section>
+
       <section class="section characters" id="characters">
   <div class="container">
     <h2>characters</h2>
@@ -213,10 +301,88 @@
 </section>
 
       <section class="section gallery" id="gallery">
-  <div class="container">
+  <div class="container swiper mySwiper">
     <h2>Gallery</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/STP-12572/assets/gallery_1_desk-aQrnXm3S.jpg"
+              media="(min-width: 1440px)"
+            />
+
+            <img
+              src="/STP-12572/assets/gallery_1_desk@2x-BlxAK50b.jpg"
+              alt="Hello Kitty Merch"
+              class="feature-image"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="./img/gallery/gallery_2_desk.jpg"
+              media="(min-width: 1440px)"
+            />
+
+            <img
+              src="/STP-12572/assets/gallery_2_desk@2x-C__y7fyD.jpg"
+              alt="Hello Kitty Merch"
+              class="feature-image"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          Slide 3<picture>
+            <source
+              srcset="/STP-12572/assets/gallery_3_desk-8Xq_JlG1.jpg"
+              media="(min-width: 1440px)"
+            />
+
+            <img
+              src="/STP-12572/assets/gallery_3_desk@2x-DahwoOHx.jpg"
+              alt="Hello Kitty Merch"
+              class="feature-image"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/STP-12572/assets/gallery_4_desk-CWx-qAvt.jpg"
+              media="(min-width: 1440px)"
+            />
+
+            <img
+              src="/STP-12572/assets/gallery_4_desk@2x-DFKgQsBE.jpg"
+              alt="Hello Kitty Merch"
+              class="feature-image"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/STP-12572/assets/gallery_5_desk-gndrBQiG.jpg"
+              media="(min-width: 1440px)"
+            />
+
+            <img
+              src="/STP-12572/assets/gallery_5_desk@2x-BQpUxMV5.jpg"
+              alt="Hello Kitty Merch"
+              class="feature-image"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
 </section>
+
       <section class="section reviews" id="reviews">
   <div class="container">
     <h2>reviews</h2>
@@ -322,5 +488,10 @@
   </div>
 </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+   
   </body>
 </html>
