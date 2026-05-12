@@ -1,11 +1,11 @@
 .gallery {
-  padding-top: var(--section-gap);
+  padding-top: 16px;
+ 
 }
-
-.gallery h2 {
-  margin-bottom: 24px;
+.gallery h2{
+  
+  margin-bottom: 12px;
 }
-
 /* МОБІЛЬНІ СТИЛІ (Swiper) */
 .gallery-swiper {
   width: 100%;
@@ -23,15 +23,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin-top: 24px;
-  z-index: 10;
+  gap: 42px;
+  margin-top: 12px;
+  
 }
 
 .swiper-button-prev-custom,
 .swiper-button-next-custom {
-  width: 44px;  /* Чіткі розміри для кліку */
-  height: 44px;
+  width: 48px; 
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,11 +66,10 @@
   }
   
   .gallery-swiper .swiper-wrapper {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important; /* 3 колонки */
-    gap: 24px !important;
-    transform: none !important;
-    width: 100% !important;
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 24px;
+
   }
 
   .gallery-swiper .swiper-slide {
@@ -93,4 +92,10 @@
   .gallery-controls {
     display: none;
   }
+  .gallery {
+  padding-top: 78px;
+ }
+ .gallery h2{
+    margin-bottom: 44px;
+}
 }
