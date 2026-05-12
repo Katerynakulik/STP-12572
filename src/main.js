@@ -32,3 +32,19 @@ const swiper = new Swiper('.gallery-swiper', {
     },
   },
 });
+
+const reviewsSwiper = new Swiper('.reviews-swiper', {
+  modules: [Navigation], // Пагінацію можна прибрати, якщо в HTML її немає
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: '.reviews-swiper .swiper-button-next-custom', // Прив'язка до конкретної секції
+    prevEl: '.reviews-swiper .swiper-button-prev-custom',
+  },
+  breakpoints: {
+    1440: {
+      enabled: false,
+    },
+  },
+});

@@ -1,3 +1,88 @@
-.reviews{
-    background-color: burlywood;
+.reviews {
+  padding-top: 16px;
+}
+.reviews h2 {
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+/* МОБІЛЬНІ СТИЛІ (Swiper) */
+.reviews-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.review-item {
+  border-radius: 14px;
+  padding: 14px 24px;
+  width: 343px;
+  min-height: 154px;
+  background-color: #ededed;
+}
+
+.review-item p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+/* Кнопки прокрутки внизу */
+.reviews-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  margin-top: 12px;
+}
+
+.reviews-controls svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media only screen and (min-width: 1440px) {
+  .reviews {
+    padding-top: 78px;
+  }
+
+  .reviews h2 {
+    margin-bottom: 44px;
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: 0em;
+  }
+
+  .reviews-swiper {
+    overflow: visible;
+  }
+
+  /* Перетворюємо wrapper на flex-контейнер */
+  .reviews-swiper .swiper-wrapper {
+    display: flex !important;
+    flex-wrap: wrap; /* Дозволяє карткам переноситися на новий рядок */
+    justify-content: center;
+    gap: 24px;
+    transform: none !important; /* Вимикаємо зміщення Swiper */
+  }
+
+  .reviews-swiper .swiper-slide {
+    width: calc(
+      (100% - 48px) / 3
+    ) !important; /* 3 картки в ряд з урахуванням gap */
+    max-width: 380px;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  /* Ховаємо кнопки на десктопі */
+  .reviews-controls {
+    display: none;
+  }
 }
