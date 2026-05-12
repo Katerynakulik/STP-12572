@@ -28,7 +28,7 @@ const swiper = new Swiper('.gallery-swiper', {
   // Вимикаємо Swiper на десктопі
   breakpoints: {
     1440: {
-      enabled: false, // Грід працюватиме через CSS, Swiper «засинає»
+      enabled: false,
     }
   }
 });
