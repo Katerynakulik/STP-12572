@@ -1,4 +1,10 @@
 import './style.css';
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+// Імпорт стилів Swiper
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // Обробка скролу для хедера (фон)
 const header = document.querySelector('#main-header');
@@ -6,24 +12,23 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('header--scrolled', window.scrollY > 50);
 });
 // Swiper
-var swiper = new Swiper(".mySwiper", {
-  // Налаштування пагінації (дробова: 1/5, 2/5...)
+const swiper = new Swiper('.gallery-swiper', {
+  modules: [Navigation, Pagination],
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
   pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
+    el: '.swiper-pagination',
+    clickable: true,
   },
-  // Навігація стрілками
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-
-  slidesPerView: 1,      
-  spaceBetween: 20,    
+  // Вимикаємо Swiper на десктопі
   breakpoints: {
     1440: {
-      slidesPerView: 2,  
-      spaceBetween: 44, 
+      enabled: false,
     }
   }
 });
