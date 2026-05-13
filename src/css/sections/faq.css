@@ -1,3 +1,6 @@
+/* .faq {
+  padding-bottom: 16px;
+} */
 .faq .section-title {
   font-family: 'Sniglet', system-ui;
   font-weight: 800;
@@ -105,6 +108,9 @@
 
 /* Styles for Desktop devices */
 @media screen and (min-width: 1440px) {
+  .faq {
+    padding-bottom: 78px;
+  }
   .faq .section-title {
     font-size: 48px;
     margin-bottom: 44px;
