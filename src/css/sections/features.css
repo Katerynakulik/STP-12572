@@ -72,6 +72,9 @@
   background-color: #f7d2fb;
 }
 @media only screen and (min-width: 1440px) {
+  .features-container {
+    padding-top: 0;
+  }
   .desktop-hidden {
     visibility: hidden;
     display: none;

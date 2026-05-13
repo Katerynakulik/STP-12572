@@ -1,0 +1,87 @@
+.privacy-container,
+.terms-container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.container {
+}
+.terms-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 34px;
+  margin-left: 16 px;
+  margin-bottom: 64px;
+}
+.terms-back-text {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  line-height: 1.4;
+
+  color: #4a3b37;
+}
+.terms-title {
+  font-weight: 800;
+  font-size: 48px;
+  margin-bottom: 64px;
+}
+.terms-content {
+}
+.terms-back-icon {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.terms-subtitle {
+  font-size: 24px;
+
+  line-height: 1.317;
+  color: #4a3b37;
+}
+span .terms-subtitle {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.terms-text {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.317;
+}
+
+.terms-name {
+}
+.terms-domain {
+}
+.terms-section-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #4a3b37;
+}
+.privacy-list,
+.terms-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.numeric-list {
+  list-style-type: numeric;
+  padding-left: 20px;
+}
+.terms-list-item {
+}
+
+@media screen and (min-width: 1440px) {
+  .terms-title {
+    font-size: 64px;
+  }
+  .privacy-container,
+  .terms-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

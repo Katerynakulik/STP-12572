@@ -1,3 +1,7 @@
+.play-container {
+  padding-top: 16px;
+}
+
 .play-title {
   font-weight: 800;
   font-size: 24px;
@@ -33,6 +37,9 @@
   color: rgba(74, 59, 55, 0.8);
 }
 @media screen and (min-width: 1440px) {
+  .play-container {
+    padding-top: 0;
+  }
   .play-title {
     font-size: 48px;
   }
