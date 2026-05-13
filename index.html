@@ -17,14 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap"
       rel="stylesheet"
     />
-     <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <!-- Vite Entry Point -->
     <script type="module" crossorigin src="/STP-12572/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-12572/assets/rolldown-runtime-BDqkOrsv.js">
     <link rel="modulepreload" crossorigin href="/STP-12572/assets/vendor-Bap2xHwK.js">
     <link rel="stylesheet" crossorigin href="/STP-12572/assets/vendor-CZJI_IFB.css">
-    <link rel="stylesheet" crossorigin href="/STP-12572/assets/style-BJjAWj4X.css">
+    <link rel="stylesheet" crossorigin href="/STP-12572/assets/style-DGV3CWN1.css">
   </head>
   <body>
     <!-- Header Partials -->
@@ -300,10 +303,69 @@
   </div>
 </section>
 
-      <section class="section characters" id="characters">
-  <div class="container">
-    <h2>characters</h2>
+      <section class="section characters section-spacing" id="characters">
+  <div class="characters-container container">
+    <h2 class="characters-title">Characters</h2>
+
+    <p class="characters-subtitle">Meet your favorite Sanrio characters</p>
+
+    <div class="swiper characters-swiper">
+      <ul class="swiper-wrapper characters-list">
+        <li class="swiper-slide characters-item characters-item--blue">
+          <img
+            class="characters-img"
+            src="/STP-12572/assets/hello_kitty-DK8_nZJ-.png"
+            alt="Hello Kitty"
+          />
+          <div class="characters-wrapper characters-wrapper--blue">
+            <h3 class="characters-item-title">Hello Kitty</h3>
+            <p class="characters-item-text">
+              The central character who guides the experience
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide characters-item characters-item--pink">
+          <img
+            class="characters-img"
+            src="/STP-12572/assets/melody-D31C8Rz_.png"
+            alt="My Melody"
+          />
+          <div class="characters-wrapper characters-wrapper--pink">
+            <h3 class="characters-item-title">My Melody</h3>
+            <p class="characters-item-text">
+              Adds a playful and soft <br/>personality.
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide characters-item characters-item--dark">
+          <img
+            class="characters-img"
+            src="/STP-12572/assets/kuromi-DsftH2Pv.png"
+            alt="Kuromi"
+          />
+          <div class="characters-wrapper characters-wrapper--dark">
+            <h3 class="characters-item-title kuromi-title">Kuromi</h3>
+            <p class="characters-item-text kuromi-text">
+              Brings contrast and energy to the world.
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide characters-item characters-item--beige">
+          <img
+            class="characters-img"
+            src="/STP-12572/assets/cinnamoroll-ZDYnw99R.png"
+            alt="Cinnamoroll"
+          />
+          <div class="characters-wrapper characters-wrapper--beige">
+            <h3 class="characters-item-title">Cinnamoroll</h3>
+            <p class="characters-item-text">
+              Creates a light and dreamy atmosphere.
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </section>
 
       <section class="gallery section" id="gallery">
@@ -556,10 +618,10 @@
     <p class="footer-text">© 2026 longprotocol.online — All rights reserved</p>
     <ul class="footer-list">
       <li class="footer-list-item">
-        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
       </li>
       <li class="footer-list-item">
-        <a href="../terms-conditions.html">Terms of Service</a>
+        <a href="terms-conditions.html">Terms of Service</a>
       </li>
     </ul>
   </div>
@@ -567,8 +629,6 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
-   
   </body>
 </html>
