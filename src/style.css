@@ -21,6 +21,16 @@
   margin: 0;
   padding: 0;
 }
+#about,
+#how-to-play,
+#features,
+#characters,
+#gallery,
+#reviews,
+#faq,
+#contact {
+  scroll-margin-top: 80px;
+}
 
 body {
   color: #4a3b37;
