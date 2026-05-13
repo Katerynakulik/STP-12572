@@ -51,13 +51,24 @@
   .reviews {
     padding-top: 78px;
   }
-
+  review-item {
+    border-radius: 24px;
+    padding: 14px 24px;
+    width: 636px;
+    min-height: 208px;
+  }
   .reviews h2 {
     margin-bottom: 44px;
     font-weight: 800;
     font-size: 48px;
     letter-spacing: 0em;
   }
+  .review-item p {
+  
+  font-size: 24px;
+  
+}
+ 
 
   .reviews-swiper {
     overflow: visible;
@@ -68,16 +79,17 @@
     display: flex !important;
     flex-wrap: wrap; /* Дозволяє карткам переноситися на новий рядок */
     justify-content: center;
-    gap: 24px;
+    row-gap: 24px;
+    column-gap: 44px;
     transform: none !important; /* Вимикаємо зміщення Swiper */
   }
 
   .reviews-swiper .swiper-slide {
     width: calc(
-      (100% - 48px) / 3
-    ) !important; /* 3 картки в ряд з урахуванням gap */
-    max-width: 380px;
-    height: auto !important;
+      (98% - 24px) / 2
+    ) !important; 
+    
+    min-height: 208px !important;
     margin: 0 !important;
   }
 
