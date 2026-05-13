@@ -26,9 +26,9 @@
 
 .footer-list-item a {
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
 }
-.footer-list-item a::after {
+/* .footer-list-item a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -40,7 +40,7 @@
   background-color: #fff;
 
   transition: width 250ms ease;
-}
+} */
 
 .footer-list-item a:hover::after,
 .footer-list-item a:focus::after {

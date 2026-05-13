@@ -1,16 +1,19 @@
 .privacy-container,
 .terms-container {
+  padding-top: 34px;
+  padding-bottom: 34px;
   padding-left: 16px;
   padding-right: 16px;
 }
-.container {
+p:last-child {
+  margin-bottom: 0;
 }
+
 .terms-back-link {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  margin-top: 34px;
-  margin-left: 16 px;
+  margin-left: 16px;
   margin-bottom: 64px;
 }
 .terms-back-text {
@@ -74,13 +77,22 @@ span.terms-subtitle {
 }
 .terms-list-item {
 }
-
+@media screen and (min-width: 768px) {
+  .privacy-container,
+  .terms-container {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .terms-title {
     font-size: 64px;
   }
   .privacy-container,
   .terms-container {
+    padding-top: 78px;
+    padding-bottom: 78px;
+
     padding-left: 100px;
     padding-right: 100px;
   }
