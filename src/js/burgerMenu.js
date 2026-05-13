@@ -1,15 +1,15 @@
 const menu = document.querySelector('[data-menu]');
 const openBtn = document.querySelector('[data-menu-open]');
 const closeBtn = document.querySelector('[data-menu-close]');
-const menuLinks = document.querySelectorAll('.mobile-nav a');
+const menuLinks = document.querySelectorAll('[data-menu-link]');
 
 const closeMenu = () => {
-  menu.classList.remove('is-open');
+  menu.removeAttribute('data-open');
   document.body.style.overflow = '';
 };
 
 openBtn.addEventListener('click', () => {
-  menu.classList.add('is-open');
+  menu.setAttribute('data-open', '');
   document.body.style.overflow = 'hidden';
 });
 
@@ -20,7 +20,7 @@ menuLinks.forEach(link => {
 });
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+  if (e.key === 'Escape' && menu.hasAttribute('data-open')) {
     closeMenu();
   }
 });

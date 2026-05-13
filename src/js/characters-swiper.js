@@ -6,14 +6,14 @@ let charactersSwiper = null;
 function initCharactersSwiper() {
   if (window.innerWidth < 1440) {
     if (!charactersSwiper) {
-      charactersSwiper = new Swiper('.characters-swiper', {
+      charactersSwiper = new Swiper('[data-characters-swiper]', {
         modules: [Navigation],
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         navigation: {
-          nextEl: '.characters-swiper .characters-button-next',
-          prevEl: '.characters-swiper .characters-button-prev',
+          nextEl: '[data-characters-swiper] [data-characters-next]',
+          prevEl: '[data-characters-swiper] [data-characters-prev]',
         },
       });
     }
