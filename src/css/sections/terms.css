@@ -1,5 +1,5 @@
 body {
-  background:  #e4f7ff;
+  background: #e4f7ff;
 }
 
 .privacy-container,
@@ -97,7 +97,7 @@ span.terms-subtitle {
     padding-top: 78px;
     padding-bottom: 78px;
 
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 78px;
+    padding-right: 78px;
   }
 }
